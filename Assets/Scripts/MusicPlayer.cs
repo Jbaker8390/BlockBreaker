@@ -14,6 +14,7 @@ public class MusicPlayer : MonoBehaviour {
         }
         else
         {
+            //claims the instance, it's the global instance - singleton pattern
             instance = this;
             GameObject.DontDestroyOnLoad(gameObject);
         }
