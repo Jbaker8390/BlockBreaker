@@ -8,12 +8,7 @@ public class MusicPlayer : MonoBehaviour {
      void Awake()
     {
         //instanceiD of current gameobj
-        Debug.Log("Music Player Awake " + GetInstanceID());   
-    }
-
-    // Use this for initialization
-    void Start () {
-        Debug.Log("Music Player Start " + GetInstanceID());
+        Debug.Log("Music Player Awake " + GetInstanceID());
         if (instance != null)
         {
             Destroy(gameObject);
@@ -25,6 +20,12 @@ public class MusicPlayer : MonoBehaviour {
             instance = this;
             GameObject.DontDestroyOnLoad(gameObject);
         }
+    }
+
+    // Use this for initialization
+    void Start () {
+        Debug.Log("Music Player Start " + GetInstanceID());
+       
 	}
 
 	
