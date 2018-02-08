@@ -5,8 +5,15 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour {
     static MusicPlayer instance = null;
 
-	// Use this for initialization
-	void Start () {
+     void Awake()
+    {
+        //instanceiD of current gameobj
+        Debug.Log("Music Player Awake " + GetInstanceID());   
+    }
+
+    // Use this for initialization
+    void Start () {
+        Debug.Log("Music Player Start " + GetInstanceID());
         if (instance != null)
         {
             Destroy(gameObject);
