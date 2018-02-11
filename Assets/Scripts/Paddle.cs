@@ -11,6 +11,9 @@ public class Paddle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        //converts position into how many game units wide from 0 - 16
+        float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
+        print(mousePosInBlocks);
+
 	}
 }
