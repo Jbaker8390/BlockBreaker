@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    public Paddle paddle;
+    //making the access identifier private no longer exposes this in Unity UI for script parameters
+    private Paddle paddle;
     private Rigidbody2D rb;
     private bool hasStarted = false;
     private Vector3 paddleToBallVector;
     // Use this for initialization
     void Start()
     {
+        //returns first active object
+        paddle = GameObject.FindObjectOfType<Paddle>();
+
+
+
         //subtracts all 3 vector coordinates
         paddleToBallVector = this.transform.position - paddle.transform.position;
         this.rb = this.GetComponent<Rigidbody2D>();

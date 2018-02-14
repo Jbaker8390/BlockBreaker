@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class LoseCollider : MonoBehaviour {
     //instiantiation of object will allow its exposure on Unity
-    public LevelManager levelManager;
+    private LevelManager levelManager;
 
-     void OnTriggerEnter2D(Collider2D other)
+    public void Start()
     {
-        print("Trigger");
+
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
         levelManager.LoadLevel("Win");
     }
 

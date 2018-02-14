@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
-
-	public void LoadLevel(string name)
+  
+    public void LoadLevel(string name)
     {
         Debug.Log("Lvel load requested for : " + name);
         //Loads the particular level
