@@ -24,15 +24,9 @@ public class Brick : MonoBehaviour {
     {
         timesHit++;
 
-        if (timesHit == maxHits)
+        if (timesHit >= maxHits)
         {
-            Destroy(gameObject);
-        } else if (timesHit == maxHits && maxHits == 2)
-        {
-            Destroy(gameObject);
-        } else if (timesHit == maxHits && maxHits == 3)
-        {
-            Destroy(gameObject);
+            DestroyObject(gameObject);
         }
 
 
