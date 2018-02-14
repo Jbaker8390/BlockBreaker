@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61266236099636894}
   - component: {fileID: 114976829779876808}
   m_Layer: 0
-  m_Name: 3 hit
+  m_Name: 2 hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1268017275754374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 10, z: 0}
+  m_LocalPosition: {x: 7, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,10 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d574aef08314d4bb705bd05afc8b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 3
   hitSprites:
   - {fileID: 21300006, guid: f0f2de785de173c4186d585e13dfbd5d, type: 3}
-  - {fileID: 21300008, guid: f0f2de785de173c4186d585e13dfbd5d, type: 3}
 --- !u!212 &212613996940966174
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -117,7 +115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f0f2de785de173c4186d585e13dfbd5d, type: 3}
-  m_Color: {r: 0.8897059, g: 0.79153144, b: 0.47102076, a: 1}
+  m_Color: {r: 0.99264705, g: 0.9755326, b: 0.37224263, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
