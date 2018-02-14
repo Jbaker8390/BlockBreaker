@@ -28,6 +28,7 @@ public class Ball : MonoBehaviour
             {
                 print("mouse clicked, Launch Ball");
                 hasStarted = true;
+                //lauching this objects rigidbody in a certain direction
                 this.rb.velocity = new Vector2(2f, 10f);
             }
         }
