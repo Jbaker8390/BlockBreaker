@@ -17,7 +17,7 @@ public class Ball : MonoBehaviour
 
 
 
-        //subtracts all 3 vector coordinates
+        //subtracts all 3 vector coordinates to keep current positional distance between paddle and ball
         paddleToBallVector = this.transform.position - paddle.transform.position;
         this.rb = this.GetComponent<Rigidbody2D>();
     }

@@ -16,6 +16,7 @@ public class Paddle : MonoBehaviour {
         //converts position into how many game units wide from 0 - 16
         float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
 
+        //constrains positional boundaries of mouse movement in frame
         paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0.5f, 15.5f);
 
         //the instance of the current game paddleScript of the paddle object
