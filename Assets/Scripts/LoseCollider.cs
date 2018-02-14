@@ -6,14 +6,9 @@ public class LoseCollider : MonoBehaviour {
     //instiantiation of object will allow its exposure on Unity
     private LevelManager levelManager;
 
-    public void Start()
-    {
-
-        levelManager = GameObject.FindObjectOfType<LevelManager>();
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
         levelManager.LoadLevel("Win");
     }
 
