@@ -22,4 +22,6 @@ public class Paddle : MonoBehaviour {
         //the instance of the current game paddleScript of the paddle object
         this.transform.position = paddlePos;
 	}
+
+   
 }

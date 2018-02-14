@@ -40,4 +40,11 @@ public class Ball : MonoBehaviour
         }
 
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+       
+    //        this.rb.AddForce(rb.velocity.normalized * 1, ForceMode2D.Impulse);
+        
+    //}
 }
