@@ -23,7 +23,7 @@ public class Brick : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         timesHit++;
-        SimulateWin();
+        Destroy(gameObject);
     }
 
     // TODO remove this method when we can actually win.
