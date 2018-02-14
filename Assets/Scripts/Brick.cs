@@ -23,7 +23,19 @@ public class Brick : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         timesHit++;
-        Destroy(gameObject);
+
+        if (timesHit == maxHits)
+        {
+            Destroy(gameObject);
+        } else if (timesHit == maxHits && maxHits == 2)
+        {
+            Destroy(gameObject);
+        } else if (timesHit == maxHits && maxHits == 3)
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 
     // TODO remove this method when we can actually win.
