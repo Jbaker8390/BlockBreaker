@@ -47,6 +47,7 @@ public class Ball : MonoBehaviour
         if (hasStarted)
         {
             GetComponent<AudioSource>().Play();
+            this.rb.velocity += tweak;
         }
     }
 }
