@@ -27,13 +27,8 @@ public class Paddle : MonoBehaviour {
     void AutoPlay()
     {
         Vector3 paddlePos = new Vector3(0.5f, this.transform.position.y, 0f);
-        //converts position into how many game units wide from 0 - 16
         Vector3 ballPos = ball.transform.position;
-
-        //constrains positional boundaries of mouse movement in frame
         paddlePos.x = Mathf.Clamp(ballPos.x, 0.5f, 15.5f);
-
-        //the instance of the current game paddleScript of the paddle object
         this.transform.position = paddlePos;
     }
     void MoveWithMouse()
@@ -43,7 +38,7 @@ public class Paddle : MonoBehaviour {
         float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
 
         //constrains positional boundaries of mouse movement in frame
-        paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0.5f, 15.5f);
+        paddlePos.x = Mathf.Clamp(mousePosInBlocks, 1.5f, 14.5f);
 
         //the instance of the current game paddleScript of the paddle object
         this.transform.position = paddlePos;

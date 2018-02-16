@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Lvel load requested for : " + name);
         //Loads the particular level
         SceneManager.LoadScene(name);
+        Brick.breakableCount = 0;
     }
 		
     public void QuitRequest()
@@ -24,6 +25,7 @@ public class LevelManager : MonoBehaviour {
 
     public void LoadNextLevel()
     {
+        Brick.breakableCount = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
