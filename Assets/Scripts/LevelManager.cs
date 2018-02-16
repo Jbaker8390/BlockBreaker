@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour {
     {
         Debug.Log("Lvel load requested for : " + name);
         //Loads the particular level
-        Application.LoadLevel(name);
+        SceneManager.LoadScene(name);
     }
 		
     public void QuitRequest()
@@ -19,11 +19,11 @@ public class LevelManager : MonoBehaviour {
 
     public void ReturnToStart()
     {
-        Application.LoadLevel("Start");
+        SceneManager.LoadScene("Start");
     }
 
     public void LoadNextLevel()
     {
-        Application.LoadLevel(Application.loadedLevel + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 	}
