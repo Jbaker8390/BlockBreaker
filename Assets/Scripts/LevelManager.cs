@@ -26,4 +26,13 @@ public class LevelManager : MonoBehaviour {
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void BrickDestroyed()
+    {   
+        //due to static variable available to class no object instantiation needed
+        if(Brick.breakableCount <= 0)
+        {
+            LoadNextLevel();
+        }
+    }
 	}
