@@ -67,6 +67,9 @@ public class Brick : MonoBehaviour {
         if (hitSprites[spriteIndex])
         {
             this.GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
+        }else
+        {
+            Debug.LogError("No Sprite Loaded");
         }
     }
     // TODO remove this method when we can actually win.
